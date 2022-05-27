@@ -7,8 +7,8 @@ from matplotlib.patches import Rectangle
 from object_detection.utils import label_map_util
 %matplotlib inline
 
-LABEL_MAP_PATH = "/content/data/label_map.pbtxt"
-saved_model_dir = "/content/data/export"
+LABEL_MAP_PATH = "/home/tijo_thomas/docker_practice_5/docker_practice_5/label_map.pbtxt"
+saved_model_dir = "/home/tijo_thomas/docker_practice_5/docker_practice_5/saved_model.pb"
 
 
 
@@ -18,7 +18,7 @@ category_index = label_map_util.create_category_index_from_labelmap(LABEL_MAP_PA
 PATH_TO_SAVED_MODEL = os.path.join(saved_model_dir,"saved_model")
 detect_fn = tf.saved_model.load(PATH_TO_SAVED_MODEL)
 
-test_dir = "/content/gdrive/MyDrive/content/imprint/imprint/test"
+test_dir = "/home/tijo_thomas/docker_practice_5/docker_practice_5/test"
 files = [x for x in os.listdir(test_dir) if x.endswith(".jpg")]
 
 def detect(image):
