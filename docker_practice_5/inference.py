@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 from object_detection.utils import label_map_util
-%matplotlib inline
+#%matplotlib inline
 
 LABEL_MAP_PATH = "/home/tijo_thomas/docker_practice_5/docker_practice_5/label_map.pbtxt"
 saved_model_dir = "/home/tijo_thomas/docker_practice_5/docker_practice_5/saved_model.pb"
